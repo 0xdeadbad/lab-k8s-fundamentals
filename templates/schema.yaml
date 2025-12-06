@@ -1,6 +1,5 @@
 #@data/values-schema
-
 ---
 SESSION_NAMESPACE: "workshop"
-INGRESS_DOMAIN: "educates-local-dev.xyz"
+INGRESS_DOMAIN: "educates.leds.dev.br"
 POLICY_ENGINE: "none"
