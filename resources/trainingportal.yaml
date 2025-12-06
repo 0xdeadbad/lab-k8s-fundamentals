@@ -3,18 +3,27 @@ kind: TrainingPortal
 metadata:
   name: lab-k8s-fundamentals
 spec:
+  trainingPortal:
+    credentials:
+      admin:
+        username: "educates"
+        password: "admin-password"
+      robot:
+        username: "robot@educates"
+        password: "robot-password"
   portal:
+    password: "portal-password"
     registration:
       type: anonymous
     updates:
       workshop: true
     sessions:
-      maximum: 1
+      maximum: 20
     workshop:
       defaults:
         reserved: 1
         initial: 0
   workshops:
-  - name: lab-k8s-fundamentals
-    expires: 60m
-    orphaned: 5m
+    - name: lab-k8s-fundamentals
+      expires: 60m
+      orphaned: 5m
